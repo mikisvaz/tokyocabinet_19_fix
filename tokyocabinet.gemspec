@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
     s.name= "tokyocabinet"
-    s.version= '1.29.1'
+    s.version= '1.33.0'
     s.platform= "ruby"
     s.authors= ["peleteiro", "Miguel Vazquez"]
     s.bindir= "bin"
