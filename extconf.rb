@@ -14,7 +14,7 @@ tccflags = "-I/usr/local/include" if(tccflags.length < 1)
 tcldflags = "-L/usr/local/lib" if(tcldflags.length < 1)
 tclibs = "-ltokyocabinet -lz -lbz2 -lpthread -lm -lc" if(tclibs.length < 1)
 
-$CFLAGS = "-I. #{tccflags} -Wall #{$CFLAGS} -O2 -Wno-incompatible-function-pointer-types"
+$CFLAGS = "-I. #{tccflags} -Wall #{$CFLAGS} -O2 -Wno-incompatible-function-pointer-types -Wno-incompatible-pointer-types"
 $LDFLAGS = "#{$LDFLAGS} -L. #{tcldflags}"
 $libs = "#{$libs} #{tclibs}"
 
